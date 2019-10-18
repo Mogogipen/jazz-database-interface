@@ -1,0 +1,16 @@
+.layout{
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+
+.left{
+    /* width: 30%; */
+    background-color: red;
+
+}
+
+.right{
+    /* width: 70%; */
+    background-color: green;
+    margin: 15px;
+}
