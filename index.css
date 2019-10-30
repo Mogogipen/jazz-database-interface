@@ -1,6 +1,6 @@
 .layout{
     display: grid;
-    grid-template-columns: 20% auto;
+    grid-template-columns: 20% auto 10%;
 }
 
 .left{
@@ -24,7 +24,25 @@ button{
     margin-right: 10px;
 }
 
-.right{
+.middle{
     background-color: grey;
+    margin: 15px;
+}
+
+.right{
+    display: grid;
+    grid-template-rows:auto;
+    background-color: lightgray;
+    text-align: center;
+    font-size: 20pt;
+    
+}
+
+#searchBtn{
+    margin: 10px;
+}
+
+.rightBtns{
+    height: 50px;
     margin: 15px;
 }
