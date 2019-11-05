@@ -40,9 +40,16 @@ button{
 
 #searchBtn{
     margin: 10px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
 }
 
 .rightBtns{
     height: 50px;
     margin: 15px;
+}
+
+.options{
+    font-size: 16pt;
 }
