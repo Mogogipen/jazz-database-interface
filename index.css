@@ -1,8 +1,31 @@
+/*header*/
+header {
+    margin: 0;
+    padding: 20px 0;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(141, 154, 232);
+}
+
+div.title {
+    font-size: 56pt;
+    color: rgb(24, 24, 58);
+    font-family: "Trebuchet MS";
+}
+div.icon {
+    margin-right: 50px;
+    float: left;
+}
+
+/*body*/
 .layout{
     display: grid;
     grid-template-columns: 20% auto 10%;
 }
 
+/*search items*/
 .left{
     display: grid;
     grid-template-columns:auto 40%;
@@ -24,11 +47,13 @@ button{
     margin-right: 10px;
 }
 
+/*table*/
 .middle{
     background-color: grey;
     margin: 15px;
 }
 
+/*options*/
 .right{
     display: grid;
     grid-template-rows:auto;
