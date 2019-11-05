@@ -10,7 +10,7 @@ header {
 }
 
 div.title {
-    font-size: 56pt;
+    font-size: 80px;
     color: rgb(24, 24, 58);
     font-family: "Trebuchet MS";
 }
@@ -18,8 +18,16 @@ div.icon {
     margin-right: 50px;
     float: left;
 }
+div.icon img {
+    height: 80px;
+    width: 80px;
+}
 
 /*body*/
+body {
+    margin: 0;
+}
+
 .layout{
     display: grid;
     grid-template-columns: 20% auto 10%;
