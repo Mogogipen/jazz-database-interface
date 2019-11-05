@@ -49,6 +49,7 @@ button{
 
 /*table*/
 .middle{
+    align-content: center;
     background-color: grey;
     margin: 15px;
 }
@@ -73,8 +74,4 @@ button{
 .rightBtns{
     height: 50px;
     margin: 15px;
-}
-
-.options{
-    font-size: 16pt;
 }
