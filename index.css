@@ -1,3 +1,6 @@
+@import url('https://db.onlinewebfonts.com/c/e564ab2a94b273e5648ff05697eccad2?family=Magneto');
+
+
 /*header*/
 header {
     margin: 0;
@@ -12,7 +15,7 @@ header {
 div.title {
     font-size: 80px;
     color: rgb(24, 24, 58);
-    font-family: "Trebuchet MS";
+    font-family: Magneto, "Trebuchet MS";
 }
 div.icon {
     margin-right: 50px;
