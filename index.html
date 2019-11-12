@@ -4,6 +4,7 @@
 <head>
     <title>Jazz Hub</title>
     <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
 </head>
 
 <body>
@@ -19,13 +20,12 @@
 
     <div class="layout">
         <div class="left">
-            <button id = searchBtn>Search</button>
+            <button id = searchBtn onclick="searchBtnPress()" >Search</button>
 <div></div>
             Clarinet <input class="inputBox" type="number" name="instrument" value="0">
             Soprano <input class="inputBox" type="number" name="instrument" value="0">
             Alto <input class="inputBox" type="number" name="instrument" value="0">
             Tenor <input class="inputBox" type="number" name="instrument" value="0">
-            Saxophone <input class="inputBox" type="number" name="instrument" value="0">
             Trombone <input class="inputBox" type="number" name="instrument" value="0">
             Trumpet <input class="inputBox" type="number" name="instrument" value="0">
             Piano <input class="inputBox" type="number" name="instrument" value="0">
@@ -44,6 +44,11 @@
                 <option value="true">Yes</option>
                 <option value="false">No</option>
             </select>
+            Red Dot
+            <select>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
 
         </div>
 
@@ -55,9 +60,9 @@
         </div>
 
         <div class="right">
-            <button class="rightBtns">edit</button>
-            <button class="rightBtns">add</button>
-            <button class="rightBtns">delete</button>
+            <button class="rightBtns" onclick="editBtnPress()">edit</button>
+            <button class="rightBtns" onclick="addBtnPress()">add</button>
+            <button class="rightBtns" onclick="deleteBtnPress()">delete</button>
             <div></div>
         </div>
 
