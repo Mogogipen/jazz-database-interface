@@ -59,6 +59,12 @@ button{
     margin-right: 10px;
 }
 
+.dropDown{
+    border-radius: 15px;
+    margin-right: 10px;
+    text-justify: auto
+}
+
 /*table*/
 .middle{
     align-content: center;
