@@ -69,5 +69,40 @@
     </div>
 
 </body>
+<div id="addForm">
+    <button id="formBtn" onclick="closeAddForm()">Cancel</button>
+    <form id="form" action="/action_page.php" method="get">
+        <div >
+            Clarinet <input id="clarinet" class="inputBox" type="number" name="instrument" value="0"><br>
+            Soprano <input id="soprano" class="inputBox" type="number" name="instrument" value="0"><br>
+            Alto <input id="alto" class="inputBox" type="number" name="instrument" value="0"><br>
+            Tenor <input id="tenor" class="inputBox" type="number" name="instrument" value="0"><br>
+            Trombone <input id="trombone" class="inputBox" type="number" name="instrument" value="0"><br>
+            Trumpet <input id="trumpet" class="inputBox" type="number" name="instrument" value="0"><br>
+            Piano <input id="piano" class="inputBox" type="number" name="instrument" value="0"><br>
+            Bass <input id="bass" class="inputBox" type="number" name="instrument" value="0"><br>
+            Guitar <input id="guitar" class="inputBox" type="number" name="instrument" value="0"><br>
+            Drums <input id="drums" class="inputBox" type="number" name="instrument" value="0"><br>
+            Tempo
+            <select id="tempo" class="dropDown">
+                <option value="choice1">Slow</option>
+                <option value="choice2">Moderately Slow</option>
+                <option value="choice3">FoxTrot</option>
+                <option value="choice4">Bounce</option>
+            </select> <br>
+            Moonlighter
+            <select id="moonLighter" class="dropDown">
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select><br>
+            Red Dot
+            <select id="redDot" class="dropDown">
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select><br>
+    <input type="submit" value="Submit">
+</div>
+  </form>
+</div>
 
 </html>

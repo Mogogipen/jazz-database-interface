@@ -30,3 +30,11 @@ function searchBtnPress() {
     var result = e.options[e.selectedIndex].text;
     console.log("redDpt: " + result);
 }
+function addBtnPress() {
+    var x = document.getElementById("addForm");
+    x.style.visibility = "visible";
+}
+function closeAddForm() {
+    var x = document.getElementById("addForm");
+    x.style.visibility = "hidden";
+}

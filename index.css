@@ -93,3 +93,26 @@ button{
     height: 50px;
     margin: 15px;
 }
+
+/* addForm */
+#addForm{
+    /* display: grid;
+    grid-template-columns:auto; */
+    position: fixed;
+    z-index: 99;
+    top:0;
+    width: 100vw;
+    height: 100vh;
+    background-color: grey;
+    visibility: hidden;
+}
+
+#form{
+    justify-self: center;
+    margin: 10px;
+    background-color: rgb(141, 154, 232);
+}
+#formBtn{
+    height: 50px;
+    width: 100px
+}

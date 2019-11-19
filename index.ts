@@ -56,3 +56,13 @@ function searchBtnPress(){
 	var result = e.options[e.selectedIndex].text;
 	console.log("redDpt: "+result);
 }
+
+function addBtnPress(){
+    let x = document.getElementById("addForm");
+    x.style.visibility = "visible"
+}
+
+function closeAddForm(){
+    let x = document.getElementById("addForm");
+    x.style.visibility = "hidden"
+}
