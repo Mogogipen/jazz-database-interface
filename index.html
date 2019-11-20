@@ -20,19 +20,16 @@
 
     <div class="layout">
         <div class="left">
-            <button id = searchBtn onclick="searchBtnPress()" >Search</button>
-<div></div>
-            Clarinet <input id="clarinet" class="inputBox" type="number" name="instrument" value="0">
-            Soprano <input id="soprano" class="inputBox" type="number" name="instrument" value="0">
-            Alto <input id="alto" class="inputBox" type="number" name="instrument" value="0">
-            Tenor <input id="tenor" class="inputBox" type="number" name="instrument" value="0">
-            Trombone <input id="trombone" class="inputBox" type="number" name="instrument" value="0">
-            Trumpet <input id="trumpet" class="inputBox" type="number" name="instrument" value="0">
-            Piano <input id="piano" class="inputBox" type="number" name="instrument" value="0">
-            Bass <input id="bass" class="inputBox" type="number" name="instrument" value="0">
-            Guitar <input id="guitar" class="inputBox" type="number" name="instrument" value="0">
-            Drums <input id="drums" class="inputBox" type="number" name="instrument" value="0">
-            Tempo
+            <button id= "searchBtn" onclick="searchBtnPress()">Search</button>
+            <div></div>
+            Clarinet <input id="clarinet" class="inputBox" type="number" name="instrument" value="0"> Soprano <input id="soprano"
+                class="inputBox" type="number" name="instrument" value="0"> Alto <input id="alto" class="inputBox" type="number"
+                name="instrument" value="0"> Tenor <input id="tenor" class="inputBox" type="number" name="instrument" value="0">            Trombone
+            <input id="trombone" class="inputBox" type="number" name="instrument" value="0"> Trumpet <input id="trumpet"
+                class="inputBox" type="number" name="instrument" value="0"> Piano <input id="piano" class="inputBox" type="number"
+                name="instrument" value="0"> Bass <input id="bass" class="inputBox" type="number" name="instrument" value="0">            Guitar
+            <input id="guitar" class="inputBox" type="number" name="instrument" value="0"> Drums <input id="drums" class="inputBox"
+                type="number" name="instrument" value="0"> Tempo
             <select id="tempo" class="dropDown">
                 <option value="choice1">Slow</option>
                 <option value="choice2">Moderately Slow</option>
@@ -54,7 +51,7 @@
 
         <div class="middle">
 
-            <p>This is where we can have the table</p> 
+            <p>This is where we can have the table</p>
 
 
         </div>
@@ -71,38 +68,49 @@
 </body>
 <div id="addForm">
     <button id="formBtn" onclick="closeAddForm()">Cancel</button>
-    <form id="form" action="/action_page.php" method="get">
-        <div >
-            Clarinet <input id="clarinet" class="inputBox" type="number" name="instrument" value="0"><br>
-            Soprano <input id="soprano" class="inputBox" type="number" name="instrument" value="0"><br>
-            Alto <input id="alto" class="inputBox" type="number" name="instrument" value="0"><br>
-            Tenor <input id="tenor" class="inputBox" type="number" name="instrument" value="0"><br>
-            Trombone <input id="trombone" class="inputBox" type="number" name="instrument" value="0"><br>
-            Trumpet <input id="trumpet" class="inputBox" type="number" name="instrument" value="0"><br>
-            Piano <input id="piano" class="inputBox" type="number" name="instrument" value="0"><br>
-            Bass <input id="bass" class="inputBox" type="number" name="instrument" value="0"><br>
-            Guitar <input id="guitar" class="inputBox" type="number" name="instrument" value="0"><br>
-            Drums <input id="drums" class="inputBox" type="number" name="instrument" value="0"><br>
-            Tempo
-            <select id="tempo" class="dropDown">
+    <form id="addorm" action="add.php" method="POST">
+        <div id="insideAddForm">
+            Please Enter the Minimum Values of the song you want to add
+            <div>also need to add title, composer, and all other categories into database.</div>
+            <div>Song Title <input id="title" class="inputBox" type="text" name="title" value=""></div>
+            <div>YouTube Link <input id="youTubeLink" class="inputBox" type="text" name="youTubeLink" value=""></div>
+            <div>Composer <input id="composer" class="inputBox" type="text" name="composer" value=""></div>
+            etc
+            
+            <div>Clarinet <input id="clarinet" class="inputBox" type="number" name="clarinet" value="0"></div>
+            <div>Soprano <input id="soprano" class="inputBox" type="number" name="soprano" value="0"></div>
+            <div> Alto <input id="alto" class="inputBox" type="number" name="alto" value="0"></div>
+            <div> Tenor <input id="tenor" class="inputBox" type="number" name="tenor" value="0"></div>
+            <div> Trombone<input id="trombone" class="inputBox" type="number" name="trombone" value="0"></div>
+            <div> Trumpet <input id="trumpet" class="inputBox" type="number" name="trumpet" value="0"></div>
+            <div> Piano <input id="piano" class="inputBox" type="number" name="piano" value="0"></div>
+            <div> Bass <input id="bass" class="inputBox" type="number" name="bass" value="0"></div>
+            <div> Guitar<input id="guitar" class="inputBox" type="number" name="guitar" value="0"></div>
+            <div> Drums <input id="drums" class="inputBox" type="number" name="drums" value="0"></div>
+           <div> Tempo
+            <select id="tempo" class="dropDown" name="tempo">
                 <option value="choice1">Slow</option>
                 <option value="choice2">Moderately Slow</option>
                 <option value="choice3">FoxTrot</option>
                 <option value="choice4">Bounce</option>
-            </select> <br>
-            Moonlighter
-            <select id="moonLighter" class="dropDown">
+            </select>
+        </div>
+        <div> Moonlighter
+            <select id="moonLighter" class="dropDown" name="moonLighter">
                 <option value="true">Yes</option>
                 <option value="false">No</option>
-            </select><br>
-            Red Dot
-            <select id="redDot" class="dropDown">
+            </select>
+        </div>
+            <div>  Red Dot
+            <select id="redDot" class="dropDown" name="redDot">
                 <option value="true">Yes</option>
                 <option value="false">No</option>
-            </select><br>
-    <input type="submit" value="Submit">
-</div>
-  </form>
+            </select>
+        </div>
+
+           <div> <input type="submit" value="Submit"></div>
+        </div>
+    </form>
 </div>
 
 </html>
