@@ -5,7 +5,7 @@ Software Engineering, CS-2450-01, Fall 2019
 
 ## Getting Started
 
-In our presentation, we mentioned having 3 'prototypes'. This version was started in a different repository and copied over.
+In our presentation, we mentioned having 3 'prototypes'. This version was started in a **different repository and copied over.**
 When double checking files, it looks like the file "Taskfile.yml" didn't happily commit...
 
 I also noticed that there are some issues with the delete button...
